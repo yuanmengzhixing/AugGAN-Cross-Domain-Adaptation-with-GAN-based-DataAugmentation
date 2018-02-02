@@ -2,7 +2,7 @@
 
 ## Day to Night Style-transfer with Semantic Segmentation Assisting
 
-![aug-gan result banner]('./doc/auggan output result.png')
+![aug-gan result banner]('./doc/result.png')
 
 ## Prerequisite
 
