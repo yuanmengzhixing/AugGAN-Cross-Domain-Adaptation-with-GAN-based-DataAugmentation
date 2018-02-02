@@ -1,3 +1,2 @@
 # aug-GAN
-Advanced data augmentation with Generative Adversarial Networks for vehicle detection
-This repository contained our porposed model(i.e augmentationGAN), training files, and model weights. We conducted our experiment with Pytorch. 
+Novel Generative Adversarial Network(GAN) with multitask generator which joint train for sementic segmentation and day-to-night style transfer
