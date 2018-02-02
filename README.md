@@ -1,2 +1,11 @@
-# aug-GAN
-Novel Generative Adversarial Network(GAN) with multitask generator which joint train for sementic segmentation and day-to-night style transfer
+# Aug-GAN
+
+## Day to Night Style-transfer with Semantic Segmentation Assisting
+
+![aug-gan result banner]('./doc/banner.jpg')
+
+## Prerequisite
+
+- Python 3.6+
+- `scikit-image`, `click`, and `tqdm`
+
