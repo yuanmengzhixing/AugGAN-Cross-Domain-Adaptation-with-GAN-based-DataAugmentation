@@ -2,7 +2,7 @@
 
 ## Day to Night Style-transfer with Semantic Segmentation Assisting
 
-![auggan_testing_result]('./doc/result.PNG')
+![auggan_testing_result](./doc/result.PNG)
 
 ## Prerequisite
 
