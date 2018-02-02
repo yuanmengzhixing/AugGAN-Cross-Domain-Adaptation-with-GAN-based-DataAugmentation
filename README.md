@@ -10,6 +10,9 @@
 
 [![comparison video](./doc/comperison.JPG)](https://youtu.be/i6FIKnOSZw0)
 
+### Video 1: Sequencial Comparison with cycle-GAN
+Left: input sequence, Mid: cycle-GAN output, Right: AugGAN output
+
 ## Prerequisite
 
 - Python 3.6+
