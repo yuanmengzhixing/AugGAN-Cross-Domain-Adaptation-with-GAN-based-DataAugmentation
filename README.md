@@ -1,4 +1,4 @@
-# Aug-GAN
+# Semantic Preserving Day-to-night Style Transfer
 
 ## Day to Night Style-transfer with Semantic Segmentation Assisting
 
