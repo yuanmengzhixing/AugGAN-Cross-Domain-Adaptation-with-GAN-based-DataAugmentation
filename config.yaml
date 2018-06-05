@@ -1,0 +1,79 @@
+train: 
+  save_path: '../AugGAN_vCVPR/output/{}/epoch_{}'
+  root_dir: '../../../shared/SYNTHIA/'
+  epochs: 200
+  dset_mode: 'synthia'
+  discription: 'testing_107June5'
+  hyperparameters:
+    network:
+      net:
+        pool_size: 50  # Training Configuration
+        which_direction: 'AtoB'
+        niter: 110
+        niter_decay: 100
+        save_freq: 4
+        display_freq: 4
+        lr: 0.0002 
+        lambda_A: 15.0
+        lambda_B: 7.0 
+        lambda_seg_x: 0.02 
+        lambda_seg_y: 0.02
+        lambda_ws_shared: 0.2
+        lambda_ws_decoder: 0.2
+        batch_size: 1
+        name: 'test_4.30'
+# Encoder Configuration
+      enc_x:
+        input_nc: 3
+        n_blocks: 3
+        nef: 64
+        norm: 'instance'
+        use_dropout: False 
+        padding_type: 'reflect'
+      enc_y:
+        input_nc: 3
+        n_blocks: 3
+        nef: 64
+        norm: 'instance'
+        use_dropout: False 
+        padding_type: 'reflect'
+# Generator Configuration
+  # Construct    
+      gen_x:
+        input_nc: 256
+        output_nc: 3
+        parse_nc: 32
+        norm: 'instance'
+        use_dropout: False
+        n_blocks: 6
+        padding_type: 'reflect'
+      gen_y:
+        input_nc: 256
+        output_nc: 3
+        parse_nc: 32
+        norm: 'instance'
+        use_dropout: False
+        n_blocks: 6
+        padding_type: 'reflect'
+# Discriminator Configuration  
+  # Style input_nc, ndf, n_layers=3, norm_layer=norm_layer, use_sigmoid=use_sigmoid
+      dis:
+        input_nc: 3
+        ndf: 64
+        n_layers: 3
+        norm: 'instance'
+        use_sigmoid: False 
+# Dataset Configuration
+    dataset:
+      seqs: ['04']
+      phase: 'train'
+      root_dir: '../../../shared/SYNTHIA/'
+      style_A: 'SYNTHIA-SEQS-{}-SPRING'
+      style_B: 'SYNTHIA-SEQS-{}-NIGHT'    
+      load_size: 286
+      fine_size: 256
+      opt_choice: 'scale_width'
+# Loader Configuration
+    loader:
+      num_workers: 10
+      pin_memory: True      
