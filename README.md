@@ -8,7 +8,7 @@
 1st row: SYNTHIA input images, 2nd row: cycle-GAN day-to-night output, 3rd row: Aug-GAN day-to-night output; <br>
 4th row: KITTI input images, 5th row: cycle-GAN day-to-night output, 6th row: Aug-GAN day-to-night output.
 
-[![comparison video](./doc/comperison.JPG)](https://www.youtube.com/watch?v=Rs4nvM3b8VU&feature=youtu.be)
+[![comparison video](./doc/comperison.png)](https://www.youtube.com/watch?v=Rs4nvM3b8VU&feature=youtu.be)
 
 ### Video 1: Sequencial Comparison with cycle-GAN
 Left: input sequence, Mid: cycle-GAN output, Right: AugGAN output
