@@ -1,4 +1,4 @@
-# Semantic Preserving Day-to-night Style Transfer
+# Semantic preserving image-to-image translation
 
 ## Day to Night Style-transfer with Semantic Segmentation Assistant
 
@@ -16,5 +16,5 @@ Left: input sequence, Mid: cycle-GAN output, Right: AugGAN output
 ## Prerequisite
 
 - Python 3.6+
-- `scikit-image`, `click`, and `tqdm`
+- `scikit-image`, `tqdm`
 
